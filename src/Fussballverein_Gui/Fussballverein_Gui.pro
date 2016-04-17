@@ -11,12 +11,12 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = Fussballverein_Gui
 TEMPLATE = app
 
-
 SOURCES += main.cpp\
-        widget.cpp
+        settings.cpp
 
-HEADERS  += widget.h
+HEADERS  += settings.h
 
-FORMS    += widget.ui
+FORMS    += settings.ui
+
 
 QMAKE_CXXFLAGS += -std=gnu++11
