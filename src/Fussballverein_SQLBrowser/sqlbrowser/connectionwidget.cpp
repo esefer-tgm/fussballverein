@@ -68,6 +68,7 @@ static QString qDBCaption(const QSqlDatabase &db)
     if (!db.userName().isEmpty())
         nm.append(db.userName()).append(QLatin1Char('@'));
     nm.append(db.databaseName());
+    nm.append("("+db.hostName()+")");
     return nm;
 }
 

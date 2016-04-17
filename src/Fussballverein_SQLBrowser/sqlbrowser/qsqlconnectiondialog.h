@@ -57,7 +57,6 @@ public:
 private slots:
     void on_okButton_clicked();
     void on_cancelButton_clicked() { reject(); }
-    void on_dbCheckBox_clicked() { ui.connGroupBox->setEnabled(!ui.dbCheckBox->isChecked()); }
 
     void on_comboDriver_activated(const QString &arg1);
 
